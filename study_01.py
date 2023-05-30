@@ -23,27 +23,28 @@ second = local[1]
 print(second)
 
 # 가장 큰 수 지정한 횟수 더하기
-for num1 in range(k+1):
-    sum1 = first * num1
+sum1 = 0
+
+for i in range(k):
+    sum1 += first 
 print(sum1)
 
 # 두 번째로 큰 수 지정한 횟수 더하기
-for num2 in range(k+1):
-    sum2 = second * num2
+sum2 = 0
+for num2 in range(k):
+    sum2 += second 
 print(sum2)
 
-# 지정 횟수 break
+# 지정 횟수 break 
 while True:
-    sum1 = first * k
-    if k == 0:
-        break
-    k -= 1
-print(k)
+    for i in range(k):
+        if m == 0:
+            break
+        m -= 1
+
     
 # 덧셈의 길이 제한하기
 while True:
-    
     if m == 0:
         break
     m -= 1
-print(m)
