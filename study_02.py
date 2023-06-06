@@ -1,10 +1,30 @@
-# 96페이지 숫자 카드 게임
+# 96페이지 
+# '숫자 카드 게임'
 
-m , n = map(int, input().split())
+# m = int(input('열의 갯수를 입력하세요.: '))
+# n = int(input('행의 갯수를 입력하세요.: '))
+# lista = [[3,1,2], [4,1,4], [2,2,2]]
+# listb = []
+# ans = 0
+# for i in range(n):
+#     lista[i].sort()
+#     listb.append(lista[i][0])
+# print(listb)
 
+
+# 99 페이지 
+# '1이 될 때까지'
+ 
+n = int(input('값을 입력해주세요.: '))
+k = int(input('값을 입력해주세요.: '))
 ans = 0
-for i in range(n):
-    data = list(map(int, input().split()))
-    mi = min(data)
-    ans = max(ans, mi)
+while True:
+    y = (n // k) * k
+    ans += (n - y)
+    n = y
+    if n < k:
+        break
+    ans += 1
+    n //= k
+ans += (n - 1)
 print(ans)
