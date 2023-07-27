@@ -12,12 +12,12 @@ answer = []
     
 for i in range(1, n+1):
     if people != 0:
-        result[i]= stages.count(i) / people
+        result[i] = stages.count(i) / people
         people = people - stages.count(i)
     else:
         result[i] = 0
 
     
-answer = sorted(result, key = result.get, reverse=True)
+answer = sorted(result, key = result.get, reverse = True)
                   
 print(answer)
